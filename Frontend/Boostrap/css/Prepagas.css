@@ -3,6 +3,10 @@ body {
   background-color: #f5f5f5;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
+  background-image: url("../img/posible.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* -- BANANA --*/
@@ -17,37 +21,40 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+/* -- Contenido de las Prepagas -- */
 .acordeon {
   width: 90%;
   max-width: 800px;
   margin: 40px auto;
   font-family: 'Cormorant', serif;
+
 }
 
 .acordeon_titulo {
   width: 100%;
-  text-align: left;
-  padding: 15px;
-  background-color: #2C6E91;
+  text-align: center;
+  padding: 1px;
+  background-color: rgb(241, 244, 245,0.8);
   color: white;
   border: none;
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
 
 .acordeon_titulo:hover {
-  background-color: #1f4e6a;
+  background-color: #ffffff;
 }
 
 .acordeon_contenido {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  background-color: #F2F2F2;
+  background-color: rgb(241, 244, 245,0.8);
   padding: 0 15px;
   text-align: left;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .acordeon_contenido p {
@@ -55,6 +62,12 @@ body {
   color: #003B5C;
   font-size: 1rem;
 }
+
+.acordeon_contenido.activo {
+  max-height: 1000px; 
+  padding: 16px;
+}
+
 
 footer {
   background-color: #B6C3CC;
