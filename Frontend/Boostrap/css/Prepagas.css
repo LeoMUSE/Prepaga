@@ -1,25 +1,33 @@
-/* Fuente general */
 body {
   background-color: #f5f5f5;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
+
   background-image: url("../img/posible.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 100px;
 }
 
-/* -- BANANA --*/
-
-.banner {
-  background-image: url("../img/Montaña.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 280px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+main {
+  flex: 1;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
 
 /* -- Contenido de las Prepagas -- */
 .acordeon {
@@ -71,60 +79,70 @@ body {
 
 footer {
   background-color: #B6C3CC;
-  display: flex; 
-  flex-direction: row;
-  align-items: flex-start; 
-  text-align: left; 
-  color: #000000;
   width: 100%;
-}
+  padding: 20px 40px;
 
-.logo-footer {
-  width: 100px;
-  height: auto;
-  margin-top: 2%;
-
-}
-
-li {
-  list-style: none;
-  text-decoration: none;
-  margin-top: 15%;
-}
-
-li a {
-  text-decoration: none;
-  color: #000000;
-
-}
-
-.social-iconos-conteiner {
-  font-size: 40px;
   display: flex;
-  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+footer img {
+  height: 45px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
   gap: 25px;
-  margin-left: 350px;
 }
 
-.social-icon ion-icon {
-  font-size: 40px; 
-  transition: transform 0.3s ease-in-out;
+.footer-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.social-icon ion-icon[name="logo-whatsapp"] {
-  color: #25D366;
+.footer-left ul li {
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
-.social-icon ion-icon[name="logo-instagram"] {
-  color: #E1306C;
+.footer-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
-.social-icon ion-icon[name="logo-facebook"] {
-  color: #1877F2;/
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-.social-icon:hover ion-icon {
-  transform: scale(1.2); 
+.social-icons img {
+  height: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-right p {
+  margin: 0;
+  font-size: 14px;
+  text-align: right;
 }
 
 span.copyright {
@@ -132,3 +150,4 @@ span.copyright {
     margin-top: 8%;
     margin-left: 250px;
 }
+

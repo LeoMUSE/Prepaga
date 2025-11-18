@@ -1,5 +1,5 @@
 
-// NO SE TOCA
+//Script Tarjetas
 
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".plan-card");
@@ -33,3 +33,19 @@ document.addEventListener("DOMContentLoaded", () => {
   updateClasses();
 });
 
+//Script Header
+
+let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        header.style.transform = "translateY(-100%)";
+    } else {
+        header.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+});

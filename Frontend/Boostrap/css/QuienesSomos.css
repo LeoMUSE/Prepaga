@@ -1,0 +1,153 @@
+/* Fondo general */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+
+  background-image: url("img/posible.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;   /*  ← permite que el footer baje */
+}
+
+main {
+  flex: 1;   /* ← empuja el footer hacia abajo */
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #B6C3CC;
+  width: 100%;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+footer img {
+  height: 45px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left ul li {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons img {
+  height: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-right p {
+  margin: 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* Icons */
+.social-icon ion-icon[name="logo-whatsapp"] {
+  color: #25D366;
+}
+
+.social-icon ion-icon[name="logo-instagram"] {
+  color: #E1306C;
+}
+
+.social-icon ion-icon[name="logo-facebook"] {
+  color: #1877F2;
+}
+
+span.copyright {
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-left: 250px;
+}
+
+
+.quienes-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.background-image {
+    background-image: url("img/posible.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+
+    filter: brightness(0.65);
+}
+
+
+.contenido {
+    max-width: 900px;
+    margin: -480px auto 80px auto; /* sube el texto sobre la imagen */
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenido h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contenido p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+body {
+    background-color: #ffffff;
+}
