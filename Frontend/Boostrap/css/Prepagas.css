@@ -2,8 +2,12 @@ body {
   background-color: #f5f5f5;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
+<<<<<<< HEAD
 
   background-image: url("../img/posible.jpg");
+=======
+  background-image: url("../img/fondopre.png");
+>>>>>>> nicolas
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -35,20 +39,22 @@ header {
   max-width: 800px;
   margin: 40px auto;
   font-family: 'Cormorant', serif;
-
 }
 
 .acordeon_titulo {
   width: 100%;
   text-align: center;
   padding: 1px;
-  background-color: rgb(241, 244, 245,0.8);
+  background-color: white;
   color: white;
   border: none;
   font-size: 0.5rem;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .acordeon_titulo:hover {
@@ -59,10 +65,14 @@ header {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  background-color: rgb(241, 244, 245,0.8);
+  background-color: white;
   padding: 0 15px;
   text-align: left;
   font-family: 'Segoe UI', sans-serif;
+  border-radius: 0 0 20px 20px;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .acordeon_contenido p {
@@ -74,11 +84,21 @@ header {
 .acordeon_contenido.activo {
   max-height: 1000px; 
   padding: 16px;
+  display: block;
 }
 
 
 footer {
+<<<<<<< HEAD
   background-color: #B6C3CC;
+=======
+  background-color:#c9ecfa;
+  display: flex; 
+  flex-direction: row;
+  align-items: flex-start; 
+  text-align: left; 
+  color: #000000;
+>>>>>>> nicolas
   width: 100%;
   padding: 20px 40px;
 
